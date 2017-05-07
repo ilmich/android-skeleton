@@ -1,10 +1,13 @@
 #!/bin/sh
 
+CURRENT_DIR=`pwd`
+
 echo "Generate .project"
+PROJECT_NAME=`basename $CURRENT_DIR`
 cat << EOF > .project
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>AndroidSkeleton</name>
+	<name>$PROJECT_NAME</name>
 	<comment></comment>
 	<projects>
 	</projects>
